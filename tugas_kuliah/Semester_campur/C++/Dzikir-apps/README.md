@@ -22,7 +22,7 @@ Saya asumsikan andal telah menginstall git, setiap distribusi Linux penginstalan
 Setelah git berhasil terinstall, lakukan penginstalan Gcc untuk compiler.
 
 1. Arch Linux :\
-`# pacman -S install gcc`
+`# pacman -S gcc`
 
 3. Ubuntu, Debian :\
 `# apt install build-essential `
