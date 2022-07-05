@@ -1,3 +1,8 @@
+/*
+ اللَّهُمَّ رَبَّ النَّاسِ أَذْهِبِ الْبَأْسَ اشْفِ أَنْتَ الشَّافِي لَا شَافِيَ إلَّا أَنْتَ شِفَاءً لَا يُغَادِرُ سَقْمًا
+ Luhud trisnyawati bin fulan.
+*/
+
 #include <iostream>
 #include <string>
 #include <iomanip>
@@ -44,6 +49,7 @@ int main() {
 	char u;
 	std::string input;
   std::string ResultValidation;
+  system("clear");
   int finalOutput;
   ResultValidation = checkValiInput();
   finalOutput = StringToInteger(ResultValidation);
@@ -61,4 +67,3 @@ int main() {
 		std::cout<<"Program berhenti, semoga selalu dalam lindungan-Nya.";	
 	}
 }
-
