@@ -45,9 +45,9 @@ int StringToInteger(const std::string& str) {
 
 int main() {
  Op:
-	HeadProg();
-	char u;
-	std::string input;
+  HeadProg();
+  char u;
+  std::string input;
   std::string ResultValidation;
   system("clear");
   int finalOutput;
@@ -58,12 +58,12 @@ int main() {
     std::cin>>input;
   }
   std::cout<<"Dzikir selesai dengan kalimat "<<input<<" dengan total sejumlah "<<finalOutput<<std::endl;
-	std::cout<<"Apakah anda ingin mengulang kembali [Y/n]: ";
-	std::cin>> u;
-	if(u=='y' || u=='Y'){
-		goto Op;
-	}
-	else{
-		std::cout<<"Program berhenti, semoga selalu dalam lindungan-Nya.";	
-	}
+  std::cout<<"Apakah anda ingin mengulang kembali [Y/n]: ";
+  std::cin>> u;
+  if(u=='y' || u=='Y'){
+    goto Op;
+  }
+  else{
+    std::cout<<"Program berhenti, semoga selalu dalam lindungan-Nya.";	
+  }
 }
