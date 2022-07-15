@@ -49,7 +49,6 @@ int main() {
   char u;
   std::string input;
   std::string ResultValidation;
-  system("clear");
   int finalOutput;
   ResultValidation = checkValiInput();
   finalOutput = StringToInteger(ResultValidation);
