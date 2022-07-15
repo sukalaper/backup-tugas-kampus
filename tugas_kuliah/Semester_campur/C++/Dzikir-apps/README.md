@@ -1,13 +1,13 @@
 # Dzikir Digital
 
-Sebuah program dzikir digital sederhana yang terinspirasi dari salah satu member JavaScript Indonesia, dan kemudian saya kembangkan kedalam bahasa pemrograman C++.
+Sebuah program dzikir digital sederhana yang terinspirasi dari salah satu member JavaScript Indonesia yang kemudian saya kembangkan kedalam bahasa pemrograman C++.
 
 Unduh dan gunakan dengan :
 
 
 ## GNU/Linux 
 
-Saya asumsikan andal telah menginstall git, setiap distribusi Linux penginstalan git akan berbeda. 
+Saya asumsikan andal telah menginstall git, setiap distribusi GNU/Linux penginstalan git akan berbeda. 
 
 1. Arch Linux :\
  `# pacman -S git`
@@ -43,7 +43,9 @@ Unduh repository ini, extract ke disk favorite anda (karna file berformat .zip).
 Silahkan download [DevC++](https://www.nesabamedia.com/download-dev-c/) kemudian buka aplikasi tersebut, buka file dengan menekan `Ctrl + o` dan arahkan file ketempat disk yang telah anda extract.
 
 Lakukan compile & run dengan menekan tombol `F12` , kemudian program akan terbuka secara otomatis.
-
-
-Special thanks to : ReaseRZ.
+\
+\
+\
+\
+Terimakasih banyak kepada: ReaseRZ.
 
