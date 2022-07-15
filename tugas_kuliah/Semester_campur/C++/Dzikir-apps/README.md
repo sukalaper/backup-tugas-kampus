@@ -1,7 +1,6 @@
 # Program Dzikir Sederhana
 
-Sebuah program dzikir digital sederhana yang dibangun dengan menggunakan bahasa pemrograman C++.
-Program ini terinspirasi dari member JavaScript Indonesia, yang kemudian saya kembangkan kedalam bahasa pemrograman C++.
+Sebuah program dzikir digital sederhana yang terinspirasi dari salah satu member JavaScript Indonesia, dan kemudian saya kembangkan kedalam bahasa pemrograman C++.
 
 Unduh dan gunakan dengan :
 
@@ -44,4 +43,7 @@ Unduh repository ini, extract ke disk favorite anda (karna file berformat .zip).
 Silahkan download [DevC++](https://www.nesabamedia.com/download-dev-c/) kemudian buka aplikasi tersebut, buka file dengan menekan `Ctrl + o` dan arahkan file ketempat disk yang telah anda extract.
 
 Lakukan compile & run dengan menekan tombol `F12` , kemudian program akan terbuka secara otomatis.
+
+
+Special thanks to : ReaseRZ.
 
