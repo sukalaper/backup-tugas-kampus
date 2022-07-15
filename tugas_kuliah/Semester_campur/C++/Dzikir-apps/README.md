@@ -1,4 +1,4 @@
-# Program Dzikir Sederhana
+# Dzikir Digital
 
 Sebuah program dzikir digital sederhana yang terinspirasi dari salah satu member JavaScript Indonesia, dan kemudian saya kembangkan kedalam bahasa pemrograman C++.
 
