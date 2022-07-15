@@ -2,7 +2,6 @@
  اللَّهُمَّ رَبَّ النَّاسِ أَذْهِبِ الْبَأْسَ اشْفِ أَنْتَ الشَّافِي لَا شَافِيَ إلَّا أَنْتَ شِفَاءً لَا يُغَادِرُ سَقْمًا
  Luhud trisnyawati bin fulan.
 */
-
 #include <iostream>
 #include <string>
 #include <iomanip>
