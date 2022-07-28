@@ -1,51 +1,54 @@
 #include <iostream>
-#define NewLine std::cout<<std::endl;
+#include <algorithm>
+#include <string>
+#include <iterator>
 
-std::string NameEmployee(){
-  std::string Nama;
-  std::cout<<"> Nama Karyawan: ";
-  getline(std::cin>>std::ws, Nama);
-  for(int i=0;i<Nama.length(); i++){
-    if(Nama[i]>='0' && Nama[i]<='9'){
-      std::cout<<"Input harus berupa Abjad."; NewLine
-     return NameEmployee();
-    }
-  }
-  return Nama;
+std::string NameEmployment()
+{
+    std::string Nama;
+    bool valid;
+    do
+    {
+        valid = true;
+        std::cout<<"Nama Karyawan : ";getline(std::cin>>std::ws,Nama);
+        for(size_t i = 0 ; i<Nama.length();i++)
+        {
+            char CharacterOf = Nama[i];
+            if(CharacterOf>='0'&&CharacterOf<='9')
+                valid=false;
+        }
+    }while(!valid);
+    return Nama;
 }
 
-int CalculateCleanSalary(){
-  double Gapok;
-  std::cout<<"> Gaji Pokok [Mis. 1000.000/2000.000, dst.]"; NewLine
-  std::cout<<": ";
-  std::cin>>Gapok;
-  double GajiTunjangan;
-  std::cout<<"> Tunjangan Dalam Desimal [Mis. 25%=0.25, dst.]"; NewLine
-  std::cout<<": ";
-  std::cin>>GajiTunjangan;
-  double GajiDanTunjangan = (GajiTunjangan*Gapok)+Gapok;
-  std::cout<<"// Total Gaji Dan Tunjangan: Rp."<<GajiDanTunjangan<<".000"; NewLine
-  double PotonganPPH;
-  std::cout<<"> Potongan PPH Dalam Desimal [Mis. 5%=0.05, dst.]"; NewLine
-  std::cout<<": ";
-  std::cin>>PotonganPPH;
-  double GajiBersih = (PotonganPPH*GajiDanTunjangan)-GajiDanTunjangan;
-  std::cout<<"// Total Gaji Bersih Karyawan: Rp."<<GajiBersih<<".000"; NewLine
-  return NULL;
+template<class T>
+T InputNumeric(const std::string& str)
+{
+    T numeric;
+    std::cout<<str;
+    std::cin>>numeric;
+    return numeric;
 }
 
-char ReCount(){
-  char R;
-  std::cout<<"Ingin mengulang [Y/n]: ";
-  std::cin>>R;
-  return R;
+double CalculateSalary()
+{
+    double Gapok = InputNumeric<double>("Gaji Pokok [Ex. 1000.000,etc]\n>>>");
+    double GajiTunjangan = InputNumeric<double>("Tunjangan Dalam Desimal[Ex. 25%=0.25, etc]\n>>>");
+    double GajiDanTunjangan = (GajiTunjangan*Gapok)+Gapok;
+    double PotonganPPN = InputNumeric<double>("Potongan PPN Dalam Desimal [Ex. 5%=0.05, etc\n>>>");
+    double GajiBersih = (PotonganPPN*GajiDanTunjangan)-GajiDanTunjangan;
+    return GajiBersih;
 }
-  
-int main(int argc, char *argv[]){
-  do{
-    NameEmployee();
-    CalculateCleanSalary();
-  }while(ReCount() == 'Y' || ReCount() == 'y');
-  std::cout<<"Exiting. . .";
-  return 0;
+
+int main()
+{
+    char validation;
+   do
+   {
+       std::cout<<"Nama Pekerja :" <<NameEmployment()<<std::endl;
+       std::cout<<"Gaji         :"<<CalculateSalary()<<std::endl;
+       validation = InputNumeric<char>("Ingin Mengulang ? ");
+   }while(validation == 'Y' || validation == 'y');
+
+    return 0;
 }
